@@ -42,5 +42,8 @@ line props = element (ElemName "line") props []
 text :: forall p i. Node I.SVGtext p i
 text = element (ElemName "text")
 
-foreignObject :: forall p i . Node I.SVGforeignObject p i
+polygon :: forall p i. Leaf I.SVGpath p i
+polygon props = element (ElemName "polygon") props []
+
+foreignObject :: forall p i. Node I.SVGforeignObject p i
 foreignObject = element (ElemName "foreignObject")
